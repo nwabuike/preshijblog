@@ -8,28 +8,31 @@
 @endpush
 
 @section('body')
-
-<h1>About Me</h1>
-
-<img src="{{ asset('/img/presh_pics.jpg')}}" alt="About image" class="flex rounded-full h-64 w-64 bg-contain mx-auto md:float-right my-6 md:ml-10">
-
-<p class="mb-6">Hello, I am Nwafor Precious Ijeoma</p>
-
-<p class="mb-6">
-    I am from Ndiown in orumba North L.G.A, Anambra state. I am an undergraduate of library and information science in university of Nigeria Nsukka.  
-</p>
-<p>
-    I love making friends, socializing, singing, dancing, acting, excercising, researching, reading, writing and traveling.I am an aspiring humanitarian,a lover and believer of God.
-
-</p>
-
-<p>
-    I created this blog as a platform in which i can bring gist of what is happening around the world, closer to my readers and also a best place where people can share their opinions, advertise their products, we can also help you promote your business.
-</p>
-
-<p class="mb-6">
-    I love blogging because it has always beeen my passion to communicate with people and share my taught through writing.
-</p>
+<main class="main-content tg-haslayout">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="tg-fullwidth-post tg-haslayout">
+                    <section class="tg-haslayout">
+                        <div class="tg-sectionheading">
+                            <h2>About Me</h2>
+                        </div>
+                        <div class="tg-post tg-haslayout">
+                        <p >
+                            Preshblog was created on june 2020, 
+                            <br> preshblog is an online entertainment platform that delivers aspiring entertainment, gist, stories, news etc.
+                        </p>
+                        <p>
+                            Follow us on Our soicial handles.
+                        
+                        </p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
 
 @endsection
 
