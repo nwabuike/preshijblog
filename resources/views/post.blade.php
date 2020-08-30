@@ -96,7 +96,7 @@ $post = $data['post'];
 							*************************************-->
 							<section class="tg-sliderpost tg-haslayout">
 								<div class="tg-sectionheading">
-									<h2>entertainment post</h2>
+									<h2>post Deatails</h2>
 								</div>
 								<div id="tg-slider-post" class="tg-slider-post">
 									<div class="item">
@@ -106,7 +106,7 @@ $post = $data['post'];
                                                 <img src="{{ $post->featured_image}}" alt="{{ $post->title }} cover image" class="mb-2">
                                                 @endif
                                                 
-											<span class="post-batch entertainment">entertainment</span>
+											<span class="post-batch entertainment">post details</span>
 										</figure>
 										<div class="tg-post tg-haslayout">
 											<h3>{{ $post->title }}</h3>
@@ -142,12 +142,12 @@ $post = $data['post'];
 												<div class="tg-socialicons pull-right">
 													<ul class="tg-socialicons">
 														<li><a href="{{config('services.social.facebook')}}"><i class="fa fa-facebook-f"></i></a></li>
-                                    <li><a href="{{config('services.social.twitter')}}"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="{{config('services.social.email')}}"><i class="fa fa-google-plus"></i></a></li>
-                                    <li><a href="{{config('services.social.instagram')}}"><i class="fa fa-instagram"></i></a></li><li><a href="{{config('services.social.facebook')}}"><i class="fa fa-facebook-f"></i></a></li>
-                                    <li><a href="{{config('services.social.twitter')}}"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="{{config('services.social.email')}}"><i class="fa fa-google-plus"></i></a></li>
-                                    <li><a href="{{config('services.social.instagram')}}"><i class="fa fa-instagram"></i></a></li>
+                                                        <li><a href="{{config('services.social.twitter')}}"><i class="fa fa-twitter"></i></a></li>
+                                                        <li><a href="{{config('services.social.email')}}"><i class="fa fa-google-plus"></i></a></li>
+                                                        <li><a href="{{config('services.social.instagram')}}"><i class="fa fa-instagram"></i></a></li><li><a href="{{config('services.social.facebook')}}"><i class="fa fa-facebook-f"></i></a></li>
+                                                        <li><a href="{{config('services.social.twitter')}}"><i class="fa fa-twitter"></i></a></li>
+                                                         <li><a href="{{config('services.social.email')}}"><i class="fa fa-google-plus"></i></a></li>
+                                                          <li><a href="{{config('services.social.instagram')}}"><i class="fa fa-instagram"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -175,7 +175,7 @@ $post = $data['post'];
                                                 <img src="{{ $post->featured_image}}" alt="{{ $post->title }} cover image" class="mb-2">
                                                 @endif
                                                 
-											<span class="post-batch entertainment">entertainment</span>
+											<span class="post-batch entertainment">post details</span>
 										</figure>
 										<div class="tg-post tg-haslayout">
 											<h3>{{ $post->title }}</h3>
@@ -183,7 +183,7 @@ $post = $data['post'];
 												<li>
 													<a href="#">
 														<i class="fa fa-user"></i>
-														<em>Jessica Alex</em>
+														<em>Presh Blog</em>
 													</a>
 												</li>
 												<li>
@@ -206,15 +206,17 @@ $post = $data['post'];
                                             </div>
 											<div class="tg-tags-socials tg-haslayout">
 												<div class="tg-tags pull-left">
-													<span><i class="fa fa-tags"></i>technology, powerfull, mobile, watch</span>
+													<span><i class="fa fa-tags"></i>bring you the best news</span>
 												</div>
 												<div class="tg-socialicons pull-right">
 													<ul class="tg-socialicons">
-														<li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
-														<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-														<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-														<li><a href="#"><i class="fa fa-tumblr"></i></a></li>
-														<li><a href="#"><i class="fa fa-share-alt"></i></a></li>
+														<li><a href="{{config('services.social.facebook')}}"><i class="fa fa-facebook-f"></i></a></li>
+                                                        <li><a href="{{config('services.social.twitter')}}"><i class="fa fa-twitter"></i></a></li>
+                                                        <li><a href="{{config('services.social.email')}}"><i class="fa fa-google-plus"></i></a></li>
+                                                        <li><a href="{{config('services.social.instagram')}}"><i class="fa fa-instagram"></i></a></li><li><a href="{{config('services.social.facebook')}}"><i class="fa fa-facebook-f"></i></a></li>
+                                                        <li><a href="{{config('services.social.twitter')}}"><i class="fa fa-twitter"></i></a></li>
+                                                         <li><a href="{{config('services.social.email')}}"><i class="fa fa-google-plus"></i></a></li>
+                                                          <li><a href="{{config('services.social.instagram')}}"><i class="fa fa-instagram"></i></a></li>
 													</ul>
 												</div>
 											</div>
@@ -238,59 +240,52 @@ $post = $data['post'];
 									<div class="item">
 										<figure class="tg-smallpost">
 											<a href="#">
-												<img alt="image description" src="img/slider-post/img-04.jpg"></a>
-											<span class="post-batch entertainment">entertainment</span>
+                                                 @if ($post->featured_image)
+                                                <img src="{{ $post->featured_image}}" alt="{{ $post->title }} cover image" class="mb-2">
+                                                @endif
+                                                
+											<span class="post-batch entertainment">post details</span>
 										</figure>
 										<div class="tg-post tg-haslayout">
-											<h3>Floating points you’re a melody # 1</h3>
+											<h3>{{ $post->title }}</h3>
 											<ul class="tg-postmata">
 												<li>
 													<a href="#">
 														<i class="fa fa-user"></i>
-														<em>Jessica Alex</em>
+														<em>Presh Blog</em>
 													</a>
 												</li>
 												<li>
 													<time datetime="2016-04-13">
 														<a href="#">
 															<i class="fa fa-clock-o"></i>
-															<em>02 dec, 2015</em>
+															<em>Published {{ format_date($post->publish_date) }}</em>
 														</a>
 													</time>
 												</li>
 												<li>
 													<a href="#">
 														<i class="fa fa-thumbs-o-up"></i>
-														<em>40</em>
-													</a>
-												</li>
-												<li>
-													<a href="#">
-														<i class="fa fa-comments-o"></i>
-														<em>0</em>
+														<em>{{ read_time($data['post']->body) }}</em>
 													</a>
 												</li>
 											</ul>
 											<div class="tg-description">
-												<p>Android Wear watches feature always-on displays, so you will always see important info like time, calls, and ailert. Respond to messages right from phone. Digital devices that we buy or use increasingly have compute and communicate wirelessly with the Internet. Technology that makes personal computers and smartphones so useful in our lives is improving rapidly and is making its way into all of things that were never “smart” before. It’s also unleashing new needs and desires that will been defined in the coming decade.</p>
-												<p>This was evident in Barcelona this week, where thousands of leading tech innovators get i gathered for Mobile World Congress (MWC). The annual event foretells the future of our wireless technology.
-			</p>
-										<p>This year, the promise of 5G wireless networks, expected to become now available in 2020, became clear. In the next five years, many parts of the world will have smarter mobile networks built for high speed and efficiency.
-
-			</p>
-										<p>In addition to futuristic technologies, MWC is where new, cutting edge and more affordable smartphones were first introduced to the world. In addition, new tablets and wearable technologies with cameras or voice control leverage wireless connections to the Internet.</p>
-											</div>
+                                                {!! $post->body !!}
+                                            </div>
 											<div class="tg-tags-socials tg-haslayout">
 												<div class="tg-tags pull-left">
-													<span><i class="fa fa-tags"></i>technology, powerfull, mobile, watch</span>
+													<span><i class="fa fa-tags"></i>bring you the best news</span>
 												</div>
 												<div class="tg-socialicons pull-right">
 													<ul class="tg-socialicons">
-														<li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
-														<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-														<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-														<li><a href="#"><i class="fa fa-tumblr"></i></a></li>
-														<li><a href="#"><i class="fa fa-share-alt"></i></a></li>
+														<li><a href="{{config('services.social.facebook')}}"><i class="fa fa-facebook-f"></i></a></li>
+                                                        <li><a href="{{config('services.social.twitter')}}"><i class="fa fa-twitter"></i></a></li>
+                                                        <li><a href="{{config('services.social.email')}}"><i class="fa fa-google-plus"></i></a></li>
+                                                        <li><a href="{{config('services.social.instagram')}}"><i class="fa fa-instagram"></i></a></li><li><a href="{{config('services.social.facebook')}}"><i class="fa fa-facebook-f"></i></a></li>
+                                                        <li><a href="{{config('services.social.twitter')}}"><i class="fa fa-twitter"></i></a></li>
+                                                         <li><a href="{{config('services.social.email')}}"><i class="fa fa-google-plus"></i></a></li>
+                                                          <li><a href="{{config('services.social.instagram')}}"><i class="fa fa-instagram"></i></a></li>
 													</ul>
 												</div>
 											</div>

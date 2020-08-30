@@ -94,50 +94,41 @@
 						*************************************-->
 						<section class="tg-haslayout">
 							<div class="tg-sectionheading">
-								<h2>{{$data['series_title']}}</h2>
+								<h2>entertainment</h2>
 							</div>
 							<figure class="tg-smallpost">
-								<a href="#"><img alt="image description" src="images/img-05.jpg"></a>
-								<span class="post-batch politics">entertainment</span>
+								<a href="#"><img alt="image description" src="img/img-05.jpg"></a>
+								<span class="post-batch politics">{{$data['series_title']}}</span>
 							</figure>
+							@foreach ($data['posts'] as $post)
 							<div class="tg-post tg-haslayout">
-								<h3>Floating points you’re a melody # 1</h3>
+								<h3><a href="{{ post_url($post->slug) }}" title="Read more - {{ $post->title }}">{{ $post->title }}</a></h3>
 								<ul class="tg-postmata">
 									<li>
-										<a href="#">
+										<a href="{{ post_url($post->slug) }}">
 											<i class="fa fa-user"></i>
-											<em>Jessica Alex</em>
+											<em>Presh Blog</em>
 										</a>
 									</li>
 									<li>
 										<time datetime="2016-04-04">
-											<a href="#">
+											<a href="{{ post_url($post->slug) }}">
 												<i class="fa fa-clock-o"></i>
-												<em>02 dec, 2015</em>
+												<em>Published {{ format_date($post->publish_date) }} </em>
 											</a>
 										</time>
 									</li>
 									<li>
-										<a href="#">
+										<a href="{{ post_url($post->slug) }}">
 											<i class="fa fa-thumbs-o-up"></i>
-											<em>40</em>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<i class="fa fa-comments-o"></i>
-											<em>0</em>
+											<em> {{ read_time($post->body) }}</em>
 										</a>
 									</li>
 								</ul>
 								<div class="tg-description">
-									<p>   @foreach ($data['posts'] as $post)
-										@include('components.post-preview-inline')
-								
-										@if ($post != $data['posts']->last())
-										<hr class="border-b my-3">
-										@endif
-									@endforeach</p>
+									{!! $post->excerpt ? '<p class="text-xl mb-4 mt-0">'. $post->excerpt.'</p>':'' !!}
+									 @if ($post != $data['posts']->last())
+									 @endif
 									<h4>Long term investment</h4>
 									{{-- <p>Science funding of £4.7 billion will be protected in real terms over the Parliament. This will include a £1.5 billion new Global Challenges Fund. The government is also taking steps to ensure these resources are used strategically and effectively through the Nurse Review recommendations and the HE green paper consultation.The government commits to funding aerospace and automotive technologies for 10 years.This will provide over £1 billion additional funding for innovation in these sectors.</p>
 							<p>By 2019 to 2020, government spending on apprenticeships will have doubled in cash terms compared to 2010 to 2011 including income from the new apprenticeship levy. Funding for the core adult skills participation budgets such as digital and high speed rail.</p>
@@ -145,32 +136,32 @@
 								<div id="tg-relatedimage-slider" class="tg-relatedimage-slider tg-haslayout">
 									<div class="item">
 										<figure>
-											<img src="images/full-width-post/img-01.jpg" alt="image description">
+											<img src="img/full-width-post/img-01.jpg" alt="image description">
 										</figure>
 									</div>
 									<div class="item">
 										<figure>
-											<img src="images/full-width-post/img-02.jpg" alt="image description">
+											<img src="img/full-width-post/img-02.jpg" alt="image description">
 										</figure>
 									</div>
 									<div class="item">
 										<figure>
-											<img src="images/full-width-post/img-03.jpg" alt="image description">
+											<img src="img/full-width-post/img-03.jpg" alt="image description">
 										</figure>
 									</div>
 									<div class="item">
 										<figure>
-											<img src="images/full-width-post/img-04.jpg" alt="image description">
+											<img src="img/full-width-post/img-04.jpg" alt="image description">
 										</figure>
 									</div>
 									<div class="item">
 										<figure>
-											<img src="images/full-width-post/img-01.jpg" alt="image description">
+											<img src="img/full-width-post/img-01.jpg" alt="image description">
 										</figure>
 									</div>
 									<div class="item">
 										<figure>
-											<img src="images/full-width-post/img-02.jpg" alt="image description">
+											<img src="img/full-width-post/img-02.jpg" alt="image description">
 										</figure>
 									</div>
 								</div>
@@ -186,17 +177,16 @@
 									</div>
 									<div class="tg-socialicons pull-right">
 										<ul class="tg-socialicons">
-											<li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
-											<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-											<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-											<li><a href="#"><i class="fa fa-tumblr"></i></a></li>
-											<li><a href="#"><i class="fa fa-share-alt"></i></a></li>
+											<li><a href="#"><i class="fa fa-f<li><a href="{{config('services.social.facebook')}}"><i class="fa fa-facebook-f"></i></a></li>
+                                            <li><a href="{{config('services.social.twitter')}}"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href="{{config('services.social.email')}}"><i class="fa fa-google-plus"></i></a></li>
+                                            <li><a href="{{config('services.social.instagram')}}"><i class="fa fa-instagram"></i></a></li>
 										</ul>
 									</div>
 								</div>
 								<div class="tg-star-ranking tg-haslayout">
 									<div class="tg-rating pull-left">
-										<span>Average :<i> 5%</i></span>
+										<span>Average :<i> 95%</i></span>
 										<ul class="rankig-star">
 											<li><i class="fa fa-star"></i></li>
 											<li><i class="fa fa-star"></i></li>
@@ -206,10 +196,11 @@
 										</ul>
 									</div>
 									<div class="tg-userrating pull-right">
-										<span>User rating :<i> 6.6 (29 votes)</i></span>
+										<span>User rating :<i> 6.6 (89 votes)</i></span>
 									</div>
 								</div>
 							</div>
+							@endforeach
 						</section>
 						<!--************************************
 								Full Width Post End
@@ -226,7 +217,7 @@
 								<div id="tg-postslider" class="tg-postslider tg-haslayout">
 									<div class="item">
 										<figure class="tg-smallpost">
-											<a href="#"><img src="images/post-of-day/img-01.jpg" alt="img-01"></a>
+											<a href="#"><img src="img/post-of-day/img-01.jpg" alt="img-01"></a>
 											<span class="post-batch music">music</span>
 										</figure>
 										<div class="tg-postheading">
@@ -235,7 +226,7 @@
 									</div>
 									<div class="item">
 										<figure class="tg-smallpost">
-											<a href="#"><img src="images/post-of-day/img-02.jpg" alt="img-02"></a>
+											<a href="#"><img src="img/post-of-day/img-02.jpg" alt="img-02"></a>
 											<span class="post-batch sport">sport</span>
 										</figure>
 										<div class="tg-postheading">
@@ -244,7 +235,7 @@
 									</div>
 									<div class="item">
 										<figure class="tg-smallpost">
-											<a href="#"><img src="images/post-of-day/img-03.jpg" alt="img-03"></a>
+											<a href="#"><img src="img/post-of-day/img-03.jpg" alt="img-03"></a>
 											<span class="post-batch travel">travel</span>
 										</figure>
 										<div class="tg-postheading">
@@ -253,7 +244,7 @@
 									</div>
 									<div class="item">
 										<figure class="tg-smallpost">
-											<a href="#"><img src="images/post-of-day/img-04.jpg" alt="img-03"></a>
+											<a href="#"><img src="img/post-of-day/img-04.jpg" alt="img-03"></a>
 											<span class="post-batch enter">entertainment</span>
 										</figure>
 										<div class="tg-postheading">
@@ -262,7 +253,7 @@
 									</div>
 									<div class="item">
 										<figure class="tg-smallpost">
-											<a href="#"><img src="images/post-of-day/img-05.jpg" alt="img-03"></a>
+											<a href="#"><img src="img/post-of-day/img-05.jpg" alt="img-03"></a>
 											<span class="post-batch food">food</span>
 										</figure>
 										<div class="tg-postheading">
@@ -271,7 +262,7 @@
 									</div>
 									<div class="item">
 										<figure class="tg-smallpost">
-											<a href="#"><img src="images/post-of-day/img-06.jpg" alt="img-03"></a>
+											<a href="#"><img src="img/post-of-day/img-06.jpg" alt="img-03"></a>
 											<span class="post-batch fashion">fashion</span>
 										</figure>
 										<div class="tg-postheading">
@@ -293,7 +284,7 @@
 	<!--************************************
 			Main End
 	*************************************-->
-	<h1>Series: {{$data['series_title']}}</h1>
+	{{-- <h1>Series: {{$data['series_title']}}</h1>
 
     <hr class="border-b my-6">
 
@@ -303,5 +294,5 @@
         @if ($post != $data['posts']->last())
         <hr class="border-b my-3">
         @endif
-    @endforeach
+    @endforeach --}}
 @endsection
