@@ -270,10 +270,10 @@
 						<div class="clip tg-haslayout">
 							<div class="today">
 								<ul>
-									<li>“Human &amp; Rights” has been helping the and surviving family Rights” know when  has been .  ( Maxblog )</li>
-									<li>“Human &amp; Rights” has been helping the and surviving family Rights” know when  has been .  ( Maxblog )</li>
-									<li>“Human &amp; Rights” has been helping the and surviving family Rights” know when  has been .  ( Maxblog )</li>
-									<li>“Human &amp; Rights” has been helping the and surviving family Rights” know when  has been .  ( Maxblog )</li>
+									<li>“Human &amp; Rights” has been helping the and surviving family Rights” know when  has been .  ( Preshblog )</li>
+									<li>“Human &amp; Rights” has been helping the and surviving family Rights” know when  has been .  ( Preshblog )</li>
+									<li>“Human &amp; Rights” has been helping the and surviving family Rights” know when  has been .  ( Preshblog )</li>
+									<li>“Human &amp; Rights” has been helping the and surviving family Rights” know when  has been .  ( Preshblog )</li>
 								</ul>
 							</div>
 						</div>
@@ -2299,11 +2299,14 @@
 							<div class="tg-sectionheading">
 								<h2>Trending | Articles</h2>
 							</div>
+							@foreach ($data['posts'] as $post)
 							<figure class="tg-smallpost">
-								<a href="#"><img alt="image description" src="img/img-05.jpg"></a>
+								@if ($post->featured_image)
+								<img src="{{ $post->featured_image}}" alt="{{ $post->title }} cover image" class="mb-2">
+								@endif
 								<span class="post-batch politics">Latest news</span>
 							</figure>
-							@foreach ($data['posts'] as $post)
+							
 							<div class="tg-post tg-haslayout">
 								<h3><a href="{{ post_url($post->slug) }}" title="Read more - {{ $post->title }}">{{ $post->title }}</a></h3>
 								<ul class="tg-postmata">

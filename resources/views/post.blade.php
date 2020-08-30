@@ -59,10 +59,10 @@ $post = $data['post'];
 				<div class="clip tg-haslayout">
 					<div class="today">
 						<ul>
-							<li>“Human &amp; Rights” has been helping the and surviving family Rights” know when  has been .  ( Maxblog )</li>
-							<li>“Human &amp; Rights” has been helping the and surviving family Rights” know when  has been .  ( Maxblog )</li>
-							<li>“Human &amp; Rights” has been helping the and surviving family Rights” know when  has been .  ( Maxblog )</li>
-							<li>“Human &amp; Rights” has been helping the and surviving family Rights” know when  has been .  ( Maxblog )</li>
+							<li>“Human &amp; Rights” has been helping the and surviving family Rights” know when  has been .  ( Preshblog )</li>
+							<li>“Human &amp; Rights” has been helping the and surviving family Rights” know when  has been .  ( Preshblog )</li>
+							<li>“Human &amp; Rights” has been helping the and surviving family Rights” know when  has been .  ( Preshblog )</li>
+							<li>“Human &amp; Rights” has been helping the and surviving family Rights” know when  has been .  ( Preshblog )</li>
 						</ul>
 					</div>
 				</div>
@@ -145,9 +145,7 @@ $post = $data['post'];
                                                         <li><a href="{{config('services.social.twitter')}}"><i class="fa fa-twitter"></i></a></li>
                                                         <li><a href="{{config('services.social.email')}}"><i class="fa fa-google-plus"></i></a></li>
                                                         <li><a href="{{config('services.social.instagram')}}"><i class="fa fa-instagram"></i></a></li><li><a href="{{config('services.social.facebook')}}"><i class="fa fa-facebook-f"></i></a></li>
-                                                        <li><a href="{{config('services.social.twitter')}}"><i class="fa fa-twitter"></i></a></li>
-                                                         <li><a href="{{config('services.social.email')}}"><i class="fa fa-google-plus"></i></a></li>
-                                                          <li><a href="{{config('services.social.instagram')}}"><i class="fa fa-instagram"></i></a></li>
+                                                       
 													</ul>
 												</div>
 											</div>
@@ -488,22 +486,22 @@ $post = $data['post'];
 									<div class="tg-widget tg-social-widget">
 										<ul class="tg-social-progress">
 											<li class="twiiter">
-												<a href="#">
+												<a href="{{config('services.social.twitter')}}">
 													<i class="fa fa-twitter"></i>
 													<span>FOLLOWERS</span>
 													<strong>100</strong>
 												</a>
 											</li>
 											<li class="facebook">
-												<a href="#">
+												<a href="{{config('services.social.facebook')}}">
 													<i class="fa fa-facebook"></i>
 													<span>FOLLOWERS</span>
 													<strong>728</strong>
 												</a>
 											</li>
 											<li class="pinterest">
-												<a href="#">
-													<i class="fa fa-pinterest"></i>
+												<a href="{{config('services.social.instagram')}}">
+													<i class="fa fa-instagram"></i>
 													<span>FOLLOWERS</span>
 													<strong>551</strong>
 												</a>

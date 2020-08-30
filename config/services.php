@@ -43,7 +43,9 @@ return [
         'email' => 'mailto:nwabuikeanthonyi@gmail.com',
         'medium' => 'https://medium.com/@username',
         'github' => 'https://github.com/username',
-        'twitter' => 'https://twitter.com/username',
+        'facebook' => 'https://facebook.com/precious.batra.5',
+        'instagram' => 'https://instagram.com/precious_ijaay',
+        'twitter' => 'https://twitter.com/precious_ijaay',
         'atom' => '#',
     ]
 ];
