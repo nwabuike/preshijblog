@@ -193,7 +193,7 @@
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6 col-xs-12">
-                            <div class="tg-col tg-haslayout">
+                            {{-- <div class="tg-col tg-haslayout">
                                 <div class="tg-postheading">
                                     <h2>today Comments</h2>
                                 </div>
@@ -273,7 +273,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
                         <div class="col-md-4 col-sm-12 col-xs-12">
                             <div class="tg-col tg-haslayout">
