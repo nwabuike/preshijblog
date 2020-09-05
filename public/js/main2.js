@@ -323,9 +323,9 @@ $(document).ready(function () {
 	-------------------------------------- */
 	$("#tg-map").gmap3({
 		marker: {
-			address: "1600 Elizabeth St, Melbourne, Victoria, Australia",
+			address: "",
 			options: {
-				title: "Robert Frost Elementary School"
+				title: ""
 			}
 		},
 		map: {

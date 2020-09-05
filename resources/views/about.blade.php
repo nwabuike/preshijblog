@@ -23,7 +23,7 @@
                             <br> preshblog is an online entertainment platform that delivers aspiring entertainment, gist, stories, news etc.
                         </p>
                         <p>
-                            Follow us on Our soicial handles.
+                            Follow us on Our soicial media handles.
                         
                         </p>
                         </div>

@@ -43,9 +43,9 @@ return [
         'email' => 'mailto:nwabuikeanthonyi@gmail.com',
         'medium' => 'https://medium.com/@username',
         'github' => 'https://github.com/username',
-        'facebook' => 'https://facebook.com/precious.batra.5',
-        'instagram' => 'https://instagram.com/precious_ijaay',
-        'twitter' => 'https://twitter.com/precious_ijaay',
+        'facebook' => 'https://web.facebook.com/preshblog.com.ng',
+        'instagram' => 'https://www.instagram.com/presh.blog',
+        'twitter' => 'https://twitter.com/preshblog',
         'atom' => '#',
     ]
 ];

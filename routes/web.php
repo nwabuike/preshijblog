@@ -24,6 +24,9 @@ Route::get('/sport', 'SportController@index')->name('sport');
 Route::get('/technology', 'TechnologyController@index')->name('technology');
 Route::get('/travel', 'TravelController@index')->name('travel');
 
+// Route::get('contact-us','ContactUsController@index');
+Route::post('contact-us','ContactUsController@handleForm');
+
 
 Route::get('/articles', 'BlogController@index')->name('articles');
 Route::get('/about', 'BlogController@about')->name('about');

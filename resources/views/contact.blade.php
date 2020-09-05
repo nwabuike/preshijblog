@@ -14,7 +14,7 @@
 	<!--************************************
 			Inner Banner Start
 	 *************************************-->
-     <div class="tg-banner tg-haslayout parallax-window" data-parallax="scroll" data-bleed="100" data-speed="0.2" data-image-src="img/bg-parallax/parallax-01.jpg">
+     <div class="tg-banner tg-haslayout parallax-window" data-parallax="scroll" data-bleed="100" data-speed="0.2" data-image-src="{{ asset('img/bg-parallax/parallax-01.jpg')}}">
 		<div class="tg-displaytable">
 			<div class="tg-displaytablecell">
 				<div class="container">
@@ -79,8 +79,24 @@
                             <div class="tg-sectionheading">
                                 <h2>Contact us</h2>
                             </div>
-                            <div id="tg-map" class="tg-map tg-haslayout"></div>
+                            <div class="tg-post tg-haslayout">
+                                <div class="col-md-6">
+                                    <a style="color:rgba(37, 35, 35, 0.808);" href="mailto:preshblogger@gmail.com">
+                                    <i class="fa fa-envelope"></i>
+                                    Preshblogger@gmail.com</a>
+                                    
+                                </div>
+                                <div class="col-md-6 ">
+                                    <a style="color:rgba(37, 35, 35, 0.808);" href="tel:09048109227"> <i class="fa fa-phone"></i>
+
+                                 +(234) 9048109227</a>
+                                </div>
+                            </div>
+                            {{-- <div id="tg-map" class="tg-map tg-haslayout"></div> --}}
                         </div>
+                        @if ( session('success'))
+    {{ session('success') }}
+@endif
                         <!--************************************
                                 Contact Us End
                         *************************************-->
@@ -88,32 +104,33 @@
                                 Leave Comment Start
                         *************************************-->
                         <div class="tg-contact-us-form tg-haslayout">
-                            <form class="tg-form-contact tg-haslayout">
+                        <form class="tg-form-contact tg-haslayout" method="POST" action="{{ url('contact-us')}}">
+                            @csrf
                                 <fieldset>
                                     <div class="row">
                                         <div class="col-md-6 col-sm-12">
                                             <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="YOUR FIRST NAME">
+                                                <input type="text" name="name" class="form-control" placeholder="YOUR FULL NAME">
                                             </div>
                                         </div>
                                         <div class="col-md-6 col-sm-12">
                                             <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="YOUR LAST NAME">
+                                                <input type="text" name="mobile" class="form-control" placeholder="YOUR PHONE NUMBER">
                                             </div>
                                         </div>
                                         <div class="col-md-6 col-sm-12">
                                             <div class="form-group">
-                                                <input type="email" class="form-control" placeholder="EMAIL ADDRESS">
+                                                <input type="email" name="email" class="form-control" placeholder="EMAIL ADDRESS">
                                             </div>
                                         </div>
                                         <div class="col-md-6 col-sm-12">
                                             <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="SUBJECT">
+                                                <input type="text" name="subject" class="form-control" placeholder="SUBJECT">
                                             </div>
                                         </div>
                                         <div class="col-sm-12">
                                             <div class="form-group">
-                                                <textarea placeholder="PLEASE WRITE YOUR MESSAGE ..." class="form-control"></textarea>
+                                                <textarea name="bodyMessage" placeholder="PLEASE WRITE YOUR MESSAGE ..." class="form-control"></textarea>
                                             </div>
                                         </div>
                                         <div class="col-sm-12">
@@ -146,151 +163,35 @@
                         <div class="tg-widget tg-social-widget">
                             <ul class="tg-social-progress">
                                 <li class="twiiter">
-                                    <a href="#">
+                                    <a href="{{config('services.social.twitter')}}">
                                         <i class="fa fa-twitter"></i>
                                         <span>FOLLOWERS</span>
                                         <strong>100</strong>
                                     </a>
                                 </li>
                                 <li class="facebook">
-                                    <a href="#">
+                                    <a href="{{config('services.social.facebook')}}">
                                         <i class="fa fa-facebook"></i>
                                         <span>FOLLOWERS</span>
                                         <strong>728</strong>
                                     </a>
                                 </li>
                                 <li class="pinterest">
-                                    <a href="#">
-                                        <i class="fa fa-pinterest"></i>
+                                    <a href="{{config('services.social.instagram')}}">
+                                        <i class="fa fa-instagram"></i>
                                         <span>FOLLOWERS</span>
                                         <strong>551</strong>
+                                        
                                     </a>
                                 </li>
                             </ul>
                         </div>
                         <div class="tg-widget tg-addwidget">
                             <div class="tg-add">
-                                <a href="#"><img src="images/aside-add-img1.jpg" alt="image description"></a>
+                                <a href="#"><img src="{{ asset('img/aside-add-img1.jpg')}}" alt="image description"></a>
                             </div>
                         </div>
-                        <div class="tg-widget tg-accordianwidget">
-                                    <div class="tg-sectionheading">
-                                        <h2>Accordion </h2>
-                                    </div>
-                                    <div class="tg-panel-group panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                                        <div class="tg-panel panel panel-default">
-                                            <div class="panel-heading" role="tab" id="headingOne">
-                                                <h4 class="panel-title">
-                                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Pintrest Accordion</a>
-                                                </h4>
-                                            </div>
-                                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                                                <div class="panel-body">
-                                                    <div id="tg-pintrest-slider" class="tg-pintrest-slider tg-haslayout">
-                                                        <div class="item">
-                                                            <div class="tg-widgetcontent">
-                                                                <span><i class="fa fa-pinterest-p"></i><em>@</em> <a href="#">Joey deVilla</a></span>
-                                                                <em><i class="fa fa-retweet"></i></em>
-                                                                <p>Could @bodletech's screen tery life to new have lengths ? <a href="#">http://www.telegraph.co.uk/</a></p>
-                                                                <time datetime="2016-04-27">16 hours ago</time>
-                                                            </div>
-                                                        </div>
-                                                        <div class="item">
-                                                            <div class="tg-widgetcontent">
-                                                                <span><i class="fa fa-pinterest-p"></i><em>@</em> <a href="#">Joey deVilla</a></span>
-                                                                <em><i class="fa fa-retweet"></i></em>
-                                                                <p>Could @bodletech's screen tery life to new have lengths ? <a href="#">http://www.telegraph.co.uk/</a></p>
-                                                                <time datetime="2016-04-27">16 hours ago</time>
-                                                            </div>
-                                                        </div>
-                                                        <div class="item">
-                                                            <div class="tg-widgetcontent">
-                                                                <span><i class="fa fa-pinterest-p"></i><em>@</em> <a href="#">Joey deVilla</a></span>
-                                                                <em><i class="fa fa-retweet"></i></em>
-                                                                <p>Could @bodletech's screen tery life to new have lengths ? <a href="#">http://www.telegraph.co.uk/</a></p>
-                                                                <time datetime="2016-04-27">16 hours ago</time>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="tg-panel panel panel-default">
-                                            <div class="panel-heading" role="tab" id="headingTwo">
-                                                <h4 class="panel-title">
-                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">tweeter Accordion</a>
-                                                </h4>
-                                            </div>
-                                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                                <div class="panel-body">
-                                                    <div id="tg-tweeter-slider" class="tg-pintrest-slider tg-haslayout">
-                                                        <div class="item">
-                                                            <div class="tg-widgetcontent">
-                                                                <span><i class="fa fa-pinterest-p"></i><em>@</em> <a href="#">Joey deVilla</a></span>
-                                                                <em><i class="fa fa-retweet"></i></em>
-                                                                <p>Could @bodletech's screen tery life to new have lengths ? <a href="#">http://www.telegraph.co.uk/</a></p>
-                                                                <time datetime="2016-04-27">16 hours ago</time>
-                                                            </div>
-                                                        </div>
-                                                        <div class="item">
-                                                            <div class="tg-widgetcontent">
-                                                                <span><i class="fa fa-pinterest-p"></i><em>@</em> <a href="#">Joey deVilla</a></span>
-                                                                <em><i class="fa fa-retweet"></i></em>
-                                                                <p>Could @bodletech's screen tery life to new have lengths ? <a href="#">http://www.telegraph.co.uk/</a></p>
-                                                                <time datetime="2016-04-27">16 hours ago</time>
-                                                            </div>
-                                                        </div>
-                                                        <div class="item">
-                                                            <div class="tg-widgetcontent">
-                                                                <span><i class="fa fa-pinterest-p"></i><em>@</em> <a href="#">Joey deVilla</a></span>
-                                                                <em><i class="fa fa-retweet"></i></em>
-                                                                <p>Could @bodletech's screen tery life to new have lengths ? <a href="#">http://www.telegraph.co.uk/</a></p>
-                                                                <time datetime="2016-04-27">16 hours ago</time>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="tg-panel panel panel-default">
-                                            <div class="panel-heading" role="tab" id="headingThree">
-                                                <h4 class="panel-title">
-                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">facebook Accordion</a>
-                                                </h4>
-                                            </div>
-                                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                                <div class="panel-body">
-                                                    <div id="tg-facebook-slider" class="tg-pintrest-slider tg-haslayout">
-                                                        <div class="item">
-                                                            <div class="tg-widgetcontent">
-                                                                <span><i class="fa fa-pinterest-p"></i><em>@</em> <a href="#">Joey deVilla</a></span>
-                                                                <em><i class="fa fa-retweet"></i></em>
-                                                                <p>Could @bodletech's screen tery life to new have lengths ? <a href="#">http://www.telegraph.co.uk/</a></p>
-                                                                <time datetime="2016-04-27">16 hours ago</time>
-                                                            </div>
-                                                        </div>
-                                                        <div class="item">
-                                                            <div class="tg-widgetcontent">
-                                                                <span><i class="fa fa-pinterest-p"></i><em>@</em> <a href="#">Joey deVilla</a></span>
-                                                                <em><i class="fa fa-retweet"></i></em>
-                                                                <p>Could @bodletech's screen tery life to new have lengths ? <a href="#">http://www.telegraph.co.uk/</a></p>
-                                                                <time datetime="2016-04-27">16 hours ago</time>
-                                                            </div>
-                                                        </div>
-                                                        <div class="item">
-                                                            <div class="tg-widgetcontent">
-                                                                <span><i class="fa fa-pinterest-p"></i><em>@</em> <a href="#">Joey deVilla</a></span>
-                                                                <em><i class="fa fa-retweet"></i></em>
-                                                                <p>Could @bodletech's screen tery life to new have lengths ? <a href="#">http://www.telegraph.co.uk/</a></p>
-                                                                <time datetime="2016-04-27">16 hours ago</time>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                       
                     </div>
                 </aside>
                 <!--************************************

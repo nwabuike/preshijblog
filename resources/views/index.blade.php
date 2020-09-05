@@ -20,7 +20,7 @@
 							<img src="{{ asset('img/banner/img-09.jpg')}}" alt="image description">
 							<figcaption class="tg-banner3-hover">
 								<h3>entertainment all time best</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<a href="#">read more</a></p>
+								<p><a href="#">read more</a></p>
 							</figcaption>
 						</figure>
 						<h2 class="enter"><a href="{{route('entertainment')}}">entertainment</a></h2>
@@ -32,7 +32,7 @@
 							<img src="{{ asset('img/banner/img-10.jpg')}}" alt="image description">
 							<figcaption class="tg-banner3-hover">
 								<h3>fashion goes wild</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<a href="#">read more</a></p>
+								<p><a href="#">read more</a></p>
 							</figcaption>
 						</figure>
 						<h2 class="fashion"><a href="{{route('fashion')}}">fashion</a></h2>
@@ -44,7 +44,7 @@
 							<img src="{{ asset('img/banner/img-11.jpg')}}" alt="image description">
 							<figcaption class="tg-banner3-hover">
 								<h3>eat healthy food</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href="#">read more</a></p>
+								<p> <a href="#">read more</a></p>
 							</figcaption>
 						</figure>
 						<h2 class="food"><a href="{{route('food')}}">food</a></h2>
@@ -56,7 +56,7 @@
 							<img src="{{ asset('img/banner/img-12.jpg')}}" alt="image description">
 							<figcaption class="tg-banner3-hover">
 								<h3>where is technology</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<a href="#">read more</a></p>
+								<p><a href="#">read more</a></p>
 							</figcaption>
 						</figure>
 						<h2 class="technology"><a href="{{route('technology')}}">technology</a></h2>
@@ -68,7 +68,7 @@
 							<img src="{{ asset('img/banner/img-13.jpg')}}" alt="image description">
 							<figcaption class="tg-banner3-hover">
 								<h3>hard rock music goes wild</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<a href="#">read more</a></p>
+								<p><a href="#">read more</a></p>
 							</figcaption>
 						</figure>
 						<h2 class="music"><a href="{{route('music')}}">music</a></h2>
@@ -80,7 +80,7 @@
 							<img src="{{ asset('img/banner/img-14.jpg')}}" alt="image description">
 							<figcaption class="tg-banner3-hover">
 								<h3>world is great</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<a href="#">read more</a></p>
+								<p><a href="#">read more</a></p>
 							</figcaption>
 						</figure>
 						<h2 class="travel"><a href="{{route('travel')}}">travel</a></h2>
@@ -92,7 +92,7 @@
 							<img src="{{ asset('img/banner/img-15.jpg')}}" alt="image description">
 							<figcaption class="tg-banner3-hover">
 								<h3>children playing football</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<a href="#">read more</a></p>
+								<p><a href="#">read more</a></p>
 							</figcaption>
 						</figure>
 						<h2 class="sport"><a href="{{route('sport')}}">sports</a></h2>
@@ -104,7 +104,7 @@
 							<img src="img/banner/img-16.jpg" alt="image description">
 							<figcaption class="tg-banner3-hover">
 								<h3>petrol price high</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<a href="#">read more</a></p>
+								<p><a href="#">read more</a></p>
 							</figcaption>
 						</figure>
 						<h2 class="politics"><a href="{{route('politics')}}">politics</a></h2>
@@ -116,7 +116,7 @@
 							<img src="img/banner/img-09.jpg" alt="image description">
 							<figcaption class="tg-banner3-hover">
 								<h3>entertainment all time best</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<a href="#">read more</a></p>
+								<p><a href="#">read more</a></p>
 							</figcaption>
 						</figure>
 						<h2 class="enter"><a href="{{route('entertainment')}}">entertainment</a></h2>
@@ -128,7 +128,7 @@
 							<img src="img/banner/img-10.jpg" alt="image description">
 							<figcaption class="tg-banner3-hover">
 								<h3>fashion goes wild</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<a href="#">read more</a></p>
+								<p><a href="#">read more</a></p>
 							</figcaption>
 						</figure>
 						<h2 class="fashion"><a href="{{route('fashion')}}">fashion</a></h2>
@@ -140,7 +140,7 @@
 							<img src="img/banner/img-11.jpg" alt="image description">
 							<figcaption class="tg-banner3-hover">
 								<h3>eat healthy food</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<a href="#">read more</a></p>
+								<p><a href="#">read more</a></p>
 							</figcaption>
 						</figure>
 						<h2 class="food"><a href="{{route('food')}}">food</a></h2>
@@ -152,7 +152,7 @@
 							<img src="img/banner/img-12.jpg" alt="image description">
 							<figcaption class="tg-banner3-hover">
 								<h3>where is technology</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<a href="#">read more</a></p>
+								<p><a href="#">read more</a></p>
 							</figcaption>
 						</figure>
 						<h2 class="technology"><a href="{{route('technology')}}">technology</a></h2>
@@ -164,7 +164,7 @@
 							<img src="img/banner/img-13.jpg" alt="image description">
 							<figcaption class="tg-banner3-hover">
 								<h3>music goes wild</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<a href="#">read more</a></p>
+								<p><a href="#">read more</a></p>
 							</figcaption>
 						</figure>
 						<h2 class="music"><a href="{{route('music')}}">music</a></h2>
@@ -176,7 +176,7 @@
 							<img src="img/banner/img-14.jpg" alt="image description">
 							<figcaption class="tg-banner3-hover">
 								<h3>world is great</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<a href="#">read more</a></p>
+								<p><a href="#">read more</a></p>
 							</figcaption>
 						</figure>
 						<h2 class="travel"><a href="{{route('travel')}}">travel</a></h2>
@@ -188,7 +188,7 @@
 							<img src="img/banner/img-15.jpg" alt="image description">
 							<figcaption class="tg-banner3-hover">
 								<h3>children playing football</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<a href="#">read more</a></p>
+								<p><a href="#">read more</a></p>
 							</figcaption>
 						</figure>
 						<h2 class="sport"><a href="{{route('sport')}}">sports</a></h2>
@@ -200,7 +200,7 @@
 							<img src="img/banner/img-16.jpg" alt="image description">
 							<figcaption class="tg-banner3-hover">
 								<h3>petrol price high</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<a href="#">read more</a></p>
+								<p><a href="#">read more</a></p>
 							</figcaption>
 						</figure>
 						<h2 class="politics"><a href="{{route('politics')}}">politics</a></h2>
@@ -212,7 +212,7 @@
 							<img src="img/banner/img-09.jpg" alt="image description">
 							<figcaption class="tg-banner3-hover">
 								<h3>entertainment all time best</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<a href="#">read more</a></p>
+								<p><a href="#">read more</a></p>
 							</figcaption>
 						</figure>
 						<h2 class="enter"><a href="{{route('entertainment')}}">entertainment</a></h2>
@@ -224,7 +224,7 @@
 							<img src="img/banner/img-10.jpg" alt="image description">
 							<figcaption class="tg-banner3-hover">
 								<h3>fashion goes wild</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<a href="#">read more</a></p>
+								<p><a href="#">read more</a></p>
 							</figcaption>
 						</figure>
 						<h2 class="fashion"><a href="{{route('fashion')}}">fashion</a></h2>
@@ -236,7 +236,7 @@
 							<img src="img/banner/img-11.jpg" alt="image description">
 							<figcaption class="tg-banner3-hover">
 								<h3>eat healthy food</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<a href="#">read more</a></p>
+								<p><a href="#">read more</a></p>
 							</figcaption>
 						</figure>
 						<h2 class="food"><a href="{{route('food')}}">food</a></h2>
@@ -248,7 +248,7 @@
 							<img src="img/banner/img-12.jpg" alt="image description">
 							<figcaption class="tg-banner3-hover">
 								<h3>where is technology</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<a href="#">read more</a></p>
+								<p><a href="#">read more</a></p>
 							</figcaption>
 						</figure>
 						<h2 class="technology"><a href="{{route('technology')}}">technology</a></h2>
