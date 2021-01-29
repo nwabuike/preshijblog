@@ -68,7 +68,7 @@
 						<img src="img/weather-icon.png" alt="weather-icon">
 						<div class="loaction">
 							<span>Cloudy</span>
-							<span>USA, Natha</span>
+							<span></span>
 						</div>
 					</div>
 				</div>
@@ -92,6 +92,14 @@
 						<!--************************************
 								Full Width Post Start
 						*************************************-->
+						
+						@foreach ($data['posts'] as $post)
+						@include('components.post-preview-inline')
+				<p>heeeeeeeeeeeeee</p>
+						@if ($post != $data['posts']->last())
+						<hr class="border-b my-3">
+						@endif
+					@endforeach
 						<section class="tg-haslayout">
 							<div class="tg-sectionheading">
 								<h2>entertainment</h2>
@@ -173,7 +181,7 @@
 								</div>
 								<div class="tg-tags-socials tg-haslayout">
 									<div class="tg-tags pull-left">
-										<span><i class="fa fa-tags"></i>technology, powerfull, mobile, watch</span>
+										<span><i class="fa fa-tags"></i>technology, powerfull</span>
 									</div>
 									<div class="tg-socialicons pull-right">
 										<ul class="tg-socialicons">
@@ -186,17 +194,17 @@
 								</div>
 								<div class="tg-star-ranking tg-haslayout">
 									<div class="tg-rating pull-left">
-										<span>Average :<i> 95%</i></span>
+										<span>Average :<i> 99%</i></span>
 										<ul class="rankig-star">
 											<li><i class="fa fa-star"></i></li>
 											<li><i class="fa fa-star"></i></li>
 											<li><i class="fa fa-star"></i></li>
-											<li><i class="fa fa-star-o"></i></li>
+											<li><i class="fa fa-star"></i></li>
 											<li><i class="fa fa-star-o"></i></li>
 										</ul>
 									</div>
 									<div class="tg-userrating pull-right">
-										<span>User rating :<i> 6.6 (89 votes)</i></span>
+										<span>User rating :<i> 5.6 (79 votes)</i></span>
 									</div>
 								</div>
 							</div>
@@ -236,7 +244,7 @@
 									<div class="item">
 										<figure class="tg-smallpost">
 											<a href="#"><img src="img/post-of-day/img-03.jpg" alt="img-03"></a>
-											<span class="post-batch travel">travel</span>
+											<span class="post-batch travel">General News</span>
 										</figure>
 										<div class="tg-postheading">
 											<h3><a href="#">Govt. Announced the tour in usa</a></h3>

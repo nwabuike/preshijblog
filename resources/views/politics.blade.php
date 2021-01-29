@@ -68,7 +68,7 @@
 						<img src="img/weather-icon.png" alt="weather-icon">
 						<div class="loaction">
 							<span>Cloudy</span>
-							<span>USA, Natha</span>
+							<span></span>
 						</div>
 					</div>
 				</div>
@@ -236,7 +236,7 @@
 									<div class="item">
 										<figure class="tg-smallpost">
 											<a href="#"><img src="img/post-of-day/img-03.jpg" alt="img-03"></a>
-											<span class="post-batch travel">travel</span>
+											<span class="post-batch travel">General News</span>
 										</figure>
 										<div class="tg-postheading">
 											<h3><a href="#">Govt. Announced the tour in usa</a></h3>

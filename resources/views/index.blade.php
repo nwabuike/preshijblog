@@ -83,7 +83,7 @@
 								<p><a href="#">read more</a></p>
 							</figcaption>
 						</figure>
-						<h2 class="travel"><a href="{{route('travel')}}">travel</a></h2>
+						<h2 class="travel"><a href="{{route('travel')}}">General News</a></h2>
 					</div>
 				</div>
 				<div class="item">
@@ -179,7 +179,7 @@
 								<p><a href="#">read more</a></p>
 							</figcaption>
 						</figure>
-						<h2 class="travel"><a href="{{route('travel')}}">travel</a></h2>
+						<h2 class="travel"><a href="{{route('travel')}}">General News</a></h2>
 					</div>
 				</div>
 				<div class="item">
@@ -277,7 +277,7 @@
 								</ul>
 							</div>
 						</div>
-						<div class="live-weather">
+						<!-- <div class="live-weather">
 							<strong class="weather-digree">+ 18C<sup>0</sup></strong>
 							<div class="weather-loaction">
 								<img src="img/weather-icon.png" alt="weather-icon">
@@ -286,7 +286,7 @@
 									<span>Nigeria, Anambra</span>
 								</div>
 							</div>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>
@@ -332,7 +332,7 @@
 												<div class="item">
 													<figure class="tg-smallpost">
 														<a href="#"><img src="img/post-of-day/img-03.jpg" alt="img-03"></a>
-														<span class="post-batch travel">travel</span>
+														<span class="post-batch travel">General News</span>
 													</figure>
 													<div class="tg-postheading tg-haslayout">
 														<h3><a href="#">Govt. Announced the tour in usa</a></h3>
@@ -481,7 +481,7 @@
 														<div role="tabpanel" class="tab-pane" id="settings">
 															<figure class="tg-smallpost">
 																<a href="#"><img alt="image description" src="img/technology-post/img-04.jpg"></a>
-																<span class="post-batch travel">travel</span>
+																<span class="post-batch travel">General News</span>
 															</figure>
 															<div class="tg-postheading">
 																<h3><a href="#">technology function</a></h3>
@@ -821,7 +821,7 @@
 														<div role="tabpanel" class="tab-pane" id="post3">
 															<figure class="tg-smallpost">
 																<a href="#"><img alt="image description" src="img/technology-post/img-04.jpg"></a>
-																<span class="post-batch travel">travel</span>
+																<span class="post-batch travel">General News</span>
 															</figure>
 															<div class="tg-postheading">
 																<h3><a href="#">technology function</a></h3>
@@ -2402,7 +2402,7 @@
 									<div class="item">
 										<figure class="tg-smallpost">
 											<a href="#"><img src="img/post-of-day/img-03.jpg" alt="img-03"></a>
-											<span class="post-batch travel">travel</span>
+											<span class="post-batch travel">General News</span>
 										</figure>
 										<div class="tg-postheading">
 											<h3><a href="#">Govt. Announced the tour in usa</a></h3>

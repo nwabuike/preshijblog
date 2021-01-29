@@ -46,7 +46,7 @@
                     <img src="{{ asset('img/weather-icon.png')}}" alt="weather-icon">
                     <div class="loaction">
                         <span>Cloudy</span>
-                        <span>USA, Natha</span>
+                        <span></span>
                     </div>
                 </div>
             </div>

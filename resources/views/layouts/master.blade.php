@@ -131,7 +131,7 @@
                                     <li><a href="{{route('technology')}}">technology</a></li>
                                     <li><a href="{{route('food')}}">food</a></li>
                                     <li><a href="{{route('sport')}}">sport</a></li>
-                                    <li><a href="{{route('travel')}}">travel</a></li>
+                                    <li><a href="{{route('travel')}}">general News</a></li>
                                     <li><a href="{{route('music')}}">music</a></li>
 									<li><a href="{{route('politics')}}">politics</a></li>
 								</ul>
@@ -930,7 +930,7 @@
                                 <li><a href="{{route('contact')}}">contact us</a></li>
                             </ul>
                         </div>
-                        <p class="tg-copyrights pull-left"> &copy; <a href="#" title="{{config('services.meta.site_name')}}">{{config('services.meta.site_name')}}</a> {{ date('Y') }}.</p>
+                        <p class="tg-copyrights pull-left" title="{{config('services.meta.site_name')}}"> Copyright &copy; {{ date('Y') }} {{config('services.meta.site_name')}}.  Emerald All Rights Reserved.</p>
                     </div>
                 </div>
             </div>
@@ -941,8 +941,8 @@
     <script src="{{asset('js/main.js')}}"></script>
     <script src="{{ asset('js/vendor/jquery.js')}}"></script>
 		<script src="{{ asset('js/vendor/bootstrap.min.js')}}"></script>
-		<script src="http://maps.google.com/maps/api/js?key=AIzaSyDlh_AGFXk44DuUVd6BDFas5XgqevprVms&amp;language=en"></script>
-		<script src="{{ asset('js/gmap3.min.js')}}"></script>
+		{{-- <script src="http://maps.google.com/maps/api/js?key=AIzaSyDlh_AGFXk44DuUVd6BDFas5XgqevprVms&amp;language=en"></script> --}}
+		{{-- <script src="{{ asset('js/gmap3.min.js')}}"></script> --}}
 		<script src="{{ asset('js/jquery-ui.js')}}"></script>
 		<script src="{{ asset('js/parallax.js')}}"></script>
 		<script src="{{ asset('js/greedynav.js')}}"></script>
