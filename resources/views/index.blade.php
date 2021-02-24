@@ -2906,7 +2906,7 @@
 						<h4>Highway Cover By Ever young ft Deev Benjamin</h4>
 						 <audio controls>
 						 
-							<source src="music\presh_music.mp3" type="audio/mpeg"> 
+							<source src="music\presh_music.mp3" type="audio/mpeg" width="700px"> 
 							
 							<!-- <iframe src="./music/Fireboy DML Nigeria - Eli.mp3" style="width: 500p; height: 500px;"></iframe> -->
 						</audio>
