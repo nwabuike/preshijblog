@@ -2893,7 +2893,7 @@
 								Full Width Post Start
 						*************************************-->
 					<section class="tg-haslayout">
-						<div class="">
+						
 						<div class="tg-sectionheading">
 							<h2>audio Feature</h2>
 						</div>
@@ -2901,7 +2901,8 @@
 						<img src="{{ asset('img/highway.jpeg')}}">
 							<iframe src="./music/Fireboy DML Nigeria - Eli.mp3"></iframe>
 						</div> -->
-						<img src="{{ asset('img/highway.jpeg')}}">
+						
+						<img src="{{ asset('img/highway.jpeg')}}" width="700px" height="450px" class="mb-2">
 						<h4>Highway Cover By Ever young ft Deev Benjamin</h4>
 						 <audio controls>
 						 
@@ -2909,7 +2910,7 @@
 							
 							<!-- <iframe src="./music/Fireboy DML Nigeria - Eli.mp3" style="width: 500p; height: 500px;"></iframe> -->
 						</audio>
-						</div>
+											
 						<div class="tg-sectionheading">
 							<h2>Trending | Articles</h2>
 						</div>
@@ -2917,7 +2918,7 @@
 						@foreach ($data['posts'] as $post)
 						<figure class="tg-smallpost">
 							@if ($post->featured_image)
-							<img src="{{ $post->featured_image}}" alt="{{ $post->title }} cover image" width="500px" height="600px" class="mb-2">
+							<img src="{{ $post->featured_image}}" alt="{{ $post->title }} cover image" width="700px" height="450px" class="mb-2">
 							@endif
 							<span class="post-batch politics">Latest news</span>
 						</figure>
