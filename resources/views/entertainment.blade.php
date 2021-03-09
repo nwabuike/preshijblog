@@ -62,7 +62,7 @@
 						</ul>
 					</div>
 				</div>
-				<div class="live-weather">
+				<!-- <div class="live-weather">
 					<strong class="weather-digree">+ 18C</strong>
 					<div class="weather-loaction">
 						<img src="img/weather-icon.png" alt="weather-icon">
@@ -71,7 +71,7 @@
 							<span></span>
 						</div>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</div>
@@ -92,14 +92,6 @@
 						<!--************************************
 								Full Width Post Start
 						*************************************-->
-						
-						@foreach ($data['posts'] as $post)
-						@include('components.post-preview-inline')
-				
-						@if ($post != $data['posts']->last())
-						<hr class="border-b my-3">
-						@endif
-					@endforeach
 						<section class="tg-haslayout">
 							<div class="tg-sectionheading">
 								<h2>entertainment</h2>
@@ -108,43 +100,49 @@
 								<a href="#"><img alt="image description" src="img/img-05.jpg"></a>
 								<span class="post-batch politics">{{$data['series_title']}}</span>
 							</figure> -->
-							<figure class="tg-smallpost">
-						<img src="{{ asset('img/pull_over.jpg')}}" width="700px" height="450px" class="mb-2">
+						<div style="margin-bottom: 30px;">
+							<!-- <figure class="tg-smallpost"> -->
+							<img src="{{ asset('img/pull_over.jpg')}}" width="1000px" height="450px" class="">
+							<br/>
+							<!-- <iframe src="./music/Fireboy DML Nigeria - Eli.mp3" style="width:700px; height: 100px;"></iframe> -->
 						 <audio controls>
 						 
 							<source src="music/Dj Grenin Good vibes" type="audio/mpeg" width="700px"> 
 							
 							<!-- <iframe src="./music/Fireboy DML Nigeria - Eli.mp3" style="width: 500p; height: 500px;"></iframe> -->
-						</audio>
-								<span class="post-batch politics">Dj Grenin Good Vibes</span>
-							</figure>
+						</audio> 
+								<h4>Dj Grenin Good Vibes</h4>
+							<!-- </figure> -->
 							<br>
-							<div class="class="container" style="margin-bottom: 50px, important!;">
-							<figure class="tg-smallpost">
-						<img src="{{ asset('img/pull_over.jpg')}}" width="700px" height="450px" class="mb-2">
+						</div>
+							<div class="class="container" style="margin-bottom: 30px, important!;">
+							<!-- <figure class="tg-smallpost"> -->
+						<img src="{{ asset('img/pull_over.jpg')}}" width="1000px" height="450px" class="mb-2">
+						<br>
 						 <audio controls>
 							<source src="music/pull_over.mp3" type="audio/mpeg" width="700px"> 
 							
 							<!-- <iframe src="./music/Fireboy DML Nigeria - Eli.mp3" style="width: 500p; height: 500px;"></iframe> -->
 						</audio>
 						
-								<span class="post-batch politics">Pull Over</span>
-							</figure>
+								<h4>Pull Over</h4>
+							<!-- </figure> -->
 							</div>
-							<br>
-							<br />
-							<hr />
-							
-							<figure class="tg-smallpost">
-						<img src="{{ asset('img/highway.jpeg')}}" width="100px" height="450px" class="mb-2">
+							<div style="margin-bottom: 30px;">
+							<!-- <figure class="tg-smallpost"> -->
+						<img src="{{ asset('img/highway.jpeg')}}" width="1000px" height="450px" class="mb-2">
+						<br>
 						 <audio controls>
 							<source src="music/presh_music.mp3" type="audio/mpeg" width="700px"> 
 							
 							<!-- <iframe src="./music/Fireboy DML Nigeria - Eli.mp3" style="width: 500p; height: 500px;"></iframe> -->
 						</audio>
-								<span class="post-batch politics">Highway</span>
-							</figure>
-							@foreach ($data['posts'] as $post)
+								<h4>Highway</h4>
+							<!-- </figure> -->
+							</div>
+					
+						
+							<!-- @foreach ($data['posts'] as $post)
 							<div class="tg-post tg-haslayout">
 								<h3><a href="{{ post_url($post->slug) }}" title="Read more - {{ $post->title }}">{{ $post->title }}</a></h3>
 								<ul class="tg-postmata">
@@ -244,7 +242,7 @@
 									</div>
 								</div>
 							</div>
-							@endforeach
+							@endforeach -->
 						</section>
 						<!--************************************
 								Full Width Post End
@@ -253,7 +251,7 @@
 						<!--************************************
 								Related Post Start
 						 *************************************-->
-						<section class="tg-posts tg-postofday tg-haslayout">
+						<!-- <section class="tg-posts tg-postofday tg-haslayout">
 							<div class="tg-sectionheading">
 								<h2>related posts</h2>
 							</div>
@@ -315,7 +313,7 @@
 									</div>
 								</div>
 							</div>
-						</section>
+						</section> -->
 						<!--************************************
 								Related Post End
 						*************************************-->
