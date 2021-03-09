@@ -1,15 +1,12 @@
 @extends('layouts.master')
-
-<!--@push('meta')-->
-
-<meta property="og:url" content="{{ url()->full() }}" />
+<meta property="og:url" content="{{ url()->full() }}">
 
 <meta property="og:type" content="article">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
  
 <meta name="twitter:card" content="summary_large_image">
-<!--@endpush-->
+
 
 @section('body')
 <!--************************************
