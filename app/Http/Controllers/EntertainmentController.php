@@ -23,19 +23,19 @@ class EntertainmentController extends Controller
     
     public function index()
     {
-        $data = [
-            'posts' => WinkPost::with('tags')
-                ->live()
-                ->whereHas('tags', function (Builder $query) {
-                    $query->where('slug', 'entertainment');
-                })->orderBy('publish_date'),
-                // ->simplePaginate(12),
+//         $data = [
+//             'posts' => WinkPost::with('tags')
+//                 ->live()
+//                 ->whereHas('tags', function (Builder $query) {
+//                     $query->where('slug', 'Entertainment');
+//                 })->orderBy('publish_date'),
+//                 // ->simplePaginate(12),
             
-            'series_title' => 'The Ultimate Revelation of Entertainment (Enterainments) ',
-            'series_description' => 'Get you the lastest Entertainment Onboard'
-        ];
-
-        return view('entertainment', compact('data'));
+//             'series_title' => 'The Ultimate Revelation of Entertainment (Enterainments) ',
+//             'series_description' => 'Get you the lastest Entertainment Onboard'
+//         ];
+// dd($data);
+        return view('entertainment');
     }
     /**
      * Show the form for creating a new resource.

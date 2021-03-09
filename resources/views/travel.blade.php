@@ -94,7 +94,40 @@
 						*************************************-->
 						<section class="tg-haslayout">
 							<div class="tg-sectionheading">
-								<h2>General News</h2>
+								<h2>General Music</h2>
+							</div>
+							<div style="margin-bottom: 30px;">
+							<!-- <figure class="tg-smallpost"> -->
+							<img src="{{ asset('img/pull_over.jpg')}}" width="1000px" height="450px" class="">
+							<br/>
+							<!-- <iframe src="./music/Fireboy DML Nigeria - Eli.mp3" style="width:700px; height: 100px;"></iframe> -->
+						 <audio controls>
+						 
+							<source src="music/Dj Grenin Good vibes" type="audio/mpeg" width="700px"> 
+							
+							<!-- <iframe src="./music/Fireboy DML Nigeria - Eli.mp3" style="width: 500p; height: 500px;"></iframe> -->
+						</audio> 
+								<h4>Dj Grenin Good Vibes</h4>
+							<!-- </figure> -->
+							<br>
+						</div>
+							<div class="class="container" style="margin-bottom: 30px, important!;">
+						<img src="{{ asset('img/pull_over.jpg')}}" width="1000px" height="450px" class="mb-2">
+						<br>
+						 <audio controls>
+							<source src="music/pull_over.mp3" type="audio/mpeg" width="700px"> 
+			
+						</audio>
+						
+								<h4>Pull Over</h4>
+							</div>
+							<div style="margin-bottom: 30px;">
+						<img src="{{ asset('img/highway.jpeg')}}" width="1000px" height="450px" class="mb-2">
+						<br>
+						 <audio controls>
+							<source src="music/presh_music.mp3" type="audio/mpeg" width="700px"> 
+						</audio>
+								<h4>Highway</h4>
 							</div>
 							<figure class="tg-smallpost">
 								<a href="#"><img alt="image description" src="img/img-05.jpg"></a>
