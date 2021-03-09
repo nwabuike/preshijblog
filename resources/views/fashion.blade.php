@@ -64,13 +64,13 @@
 				</div>
 				<div class="live-weather">
 					<strong class="weather-digree">+ 18C</strong>
-					<div class="weather-loaction">
+					<!-- <div class="weather-loaction">
 						<img src="img/weather-icon.png" alt="weather-icon">
 						<div class="loaction">
 							<span>Cloudy</span>
 							<span></span>
 						</div>
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</div>
@@ -93,13 +93,51 @@
 								Full Width Post Start
 						*************************************-->
 						<section class="tg-haslayout">
-							<div class="tg-sectionheading">
-								<h2>fashion</h2>
+						<div class="tg-sectionheading">
+								<h2>music</h2>
 							</div>
-							<figure class="tg-smallpost">
-								<a href="#"><img alt="image description" src="img/img-05.jpg"></a>
-								<span class="post-batch politics">{{$data['series_title']}}</span>
+						<!-- <div class="container">
+						<img src="{{ asset('img/highway.jpeg')}}">
+							<iframe src="./music/Fireboy DML Nigeria - Eli.mp3"></iframe>
+						</div> -->
+						<figure class="tg-smallpost">
+						<img src="{{ asset('img/pull_over.jpg')}}" width="700px" height="450px" class="mb-2">
+						 <audio controls>
+						 
+							<source src="music/Dj Grenin Good vibes" type="audio/mpeg" width="700px"> 
+							
+							<!-- <iframe src="./music/Fireboy DML Nigeria - Eli.mp3" style="width: 500p; height: 500px;"></iframe> -->
+						</audio>
+								<span class="post-batch politics">Dj Grenin Good Vibes</span>
 							</figure>
+							<br>
+							<div class="class="container" style="margin-bottom: 50px, important!;">
+							<figure class="tg-smallpost">
+						<img src="{{ asset('img/pull_over.jpg')}}" width="700px" height="450px" class="mb-2">
+						 <audio controls>
+							<source src="music/pull_over.mp3" type="audio/mpeg" width="700px"> 
+							
+							<!-- <iframe src="./music/Fireboy DML Nigeria - Eli.mp3" style="width: 500p; height: 500px;"></iframe> -->
+						</audio>
+						
+								<span class="post-batch politics">Pull Over</span>
+							</figure>
+							</div>
+							<br>
+							<br />
+							<hr />
+							
+							<figure class="tg-smallpost">
+						<img src="{{ asset('img/highway.jpeg')}}" width="100px" height="450px" class="mb-2">
+						 <audio controls>
+							<source src="music/presh_music.mp3" type="audio/mpeg" width="700px"> 
+							
+							<!-- <iframe src="./music/Fireboy DML Nigeria - Eli.mp3" style="width: 500p; height: 500px;"></iframe> -->
+						</audio>
+								<span class="post-batch politics">Highway</span>
+							</figure>
+							
+							<br>
 							@foreach ($data['posts'] as $post)
 							<div class="tg-post tg-haslayout">
 								<h3><a href="{{ post_url($post->slug) }}" title="Read more - {{ $post->title }}">{{ $post->title }}</a></h3>
@@ -209,7 +247,7 @@
 						<!--************************************
 								Related Post Start
 						 *************************************-->
-						<section class="tg-posts tg-postofday tg-haslayout">
+						<!-- <section class="tg-posts tg-postofday tg-haslayout">
 							<div class="tg-sectionheading">
 								<h2>related posts</h2>
 							</div>
@@ -271,7 +309,7 @@
 									</div>
 								</div>
 							</div>
-						</section>
+						</section> -->
 						<!--************************************
 								Related Post End
 						*************************************-->

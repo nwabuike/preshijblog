@@ -622,7 +622,7 @@
 			<h2 class="enter"><a href="{{route('entertainment')}}">entertainment</a></h2>
 		</div>
 	</div>
-	<div class="item">
+	<!-- <div class="item">
 		<div class="tg-banner-content">
 			<figure>
 				<img src="{{ asset('img/banner/img-10.jpg')}}" alt="image description">
@@ -631,9 +631,9 @@
 					<p><a href="#">read more</a></p>
 				</figcaption>
 			</figure>
-			<h2 class="fashion"><a href="{{route('fashion')}}">fashion</a></h2>
+			<h2 class="fashion"><a href="{{route('music')}}">Music</a></h2>
 		</div>
-	</div>
+	</div> -->
 	<div class="item">
 		<div class="tg-banner-content">
 			<figure>
@@ -658,7 +658,7 @@
 			<h2 class="technology"><a href="{{route('technology')}}">technology</a></h2>
 		</div>
 	</div>
-	<div class="item">
+	<!-- <div class="item">
 		<div class="tg-banner-content">
 			<figure>
 				<img src="{{ asset('img/banner/img-13.jpg')}}" alt="image description">
@@ -669,7 +669,7 @@
 			</figure>
 			<h2 class="music"><a href="{{route('music')}}">music</a></h2>
 		</div>
-	</div>
+	</div> -->
 	<div class="item">
 		<div class="tg-banner-content">
 			<figure>
@@ -718,18 +718,18 @@
 			<h2 class="enter"><a href="{{route('entertainment')}}">entertainment</a></h2>
 		</div>
 	</div>
-	<div class="item">
+	<!-- <div class="item">
 		<div class="tg-banner-content">
 			<figure>
 				<img src="img/banner/img-10.jpg" alt="image description">
 				<figcaption class="tg-banner3-hover">
-					<h3>fashion goes wild</h3>
+					<h3>music goes wild</h3>
 					<p><a href="#">read more</a></p>
 				</figcaption>
 			</figure>
-			<h2 class="fashion"><a href="{{route('fashion')}}">fashion</a></h2>
+			<h2 class="fashion"><a href="{{route('music')}}">music</a></h2>
 		</div>
-	</div>
+	</div> -->
 	<div class="item">
 		<div class="tg-banner-content">
 			<figure>
@@ -754,7 +754,7 @@
 			<h2 class="technology"><a href="{{route('technology')}}">technology</a></h2>
 		</div>
 	</div>
-	<div class="item">
+	<!-- <div class="item">
 		<div class="tg-banner-content">
 			<figure>
 				<img src="img/banner/img-13.jpg" alt="image description">
@@ -765,7 +765,7 @@
 			</figure>
 			<h2 class="music"><a href="{{route('music')}}">music</a></h2>
 		</div>
-	</div>
+	</div> -->
 	<div class="item">
 		<div class="tg-banner-content">
 			<figure>
@@ -814,7 +814,7 @@
 			<h2 class="enter"><a href="{{route('entertainment')}}">entertainment</a></h2>
 		</div>
 	</div>
-	<div class="item">
+	<!-- <div class="item">
 		<div class="tg-banner-content">
 			<figure>
 				<img src="img/banner/img-10.jpg" alt="image description">
@@ -823,9 +823,9 @@
 					<p><a href="#">read more</a></p>
 				</figcaption>
 			</figure>
-			<h2 class="fashion"><a href="{{route('fashion')}}">fashion</a></h2>
+			<h2 class="fashion"><a href="{{route('music')}}">music</a></h2>
 		</div>
-	</div>
+	</div> -->
 	<div class="item">
 		<div class="tg-banner-content">
 			<figure>
@@ -955,7 +955,7 @@
 												<div class="item">
 													<figure class="tg-smallpost">
 														<a href="#"><img src="img/post-of-day/img-06.jpg" alt="img-03"></a>
-														<span class="post-batch fashion">fashion</span>
+														<span class="post-batch fashion">music</span>
 													</figure>
 													<div class="tg-postheading tg-haslayout">
 														<h3><a href="#">Govt. Announced the tour in usa</a></h3>
@@ -2906,7 +2906,7 @@
 						<h4>Highway Cover By Ever young ft Deev Benjamin</h4>
 						 <audio controls>
 						 
-							<source src="music\presh_music.mp3" type="audio/mpeg" width="700px"> 
+							<source src="music/presh_music.mp3" type="audio/mpeg" width="700px"> 
 							
 							<!-- <iframe src="./music/Fireboy DML Nigeria - Eli.mp3" style="width: 500p; height: 500px;"></iframe> -->
 						</audio>

@@ -16,9 +16,9 @@ Route::get('/', 'BlogController@index')->name('home');
 
 //blog List
 Route::get('/entertainment', 'EntertainmentController@index')->name('entertainment');
-Route::get('/fashion', 'FashionController@index')->name('fashion');
+Route::get('/music', 'FashionController@index')->name('music');
 Route::get('/food', 'FoodController@index')->name('food');
-Route::get('/music', 'MusicController@index')->name('music');
+// Route::get('/music', 'MusicController@index')->name('music');
 Route::get('/politics', 'PoliticController@index')->name('politics');
 Route::get('/sport', 'SportController@index')->name('sport');
 Route::get('/technology', 'TechnologyController@index')->name('technology');

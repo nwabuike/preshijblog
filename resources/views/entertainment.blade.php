@@ -95,7 +95,7 @@
 						
 						@foreach ($data['posts'] as $post)
 						@include('components.post-preview-inline')
-				<p>heeeeeeeeeeeeee</p>
+				
 						@if ($post != $data['posts']->last())
 						<hr class="border-b my-3">
 						@endif
@@ -104,9 +104,45 @@
 							<div class="tg-sectionheading">
 								<h2>entertainment</h2>
 							</div>
-							<figure class="tg-smallpost">
+							<!-- <figure class="tg-smallpost">
 								<a href="#"><img alt="image description" src="img/img-05.jpg"></a>
 								<span class="post-batch politics">{{$data['series_title']}}</span>
+							</figure> -->
+							<figure class="tg-smallpost">
+						<img src="{{ asset('img/pull_over.jpg')}}" width="700px" height="450px" class="mb-2">
+						 <audio controls>
+						 
+							<source src="music/Dj Grenin Good vibes" type="audio/mpeg" width="700px"> 
+							
+							<!-- <iframe src="./music/Fireboy DML Nigeria - Eli.mp3" style="width: 500p; height: 500px;"></iframe> -->
+						</audio>
+								<span class="post-batch politics">Dj Grenin Good Vibes</span>
+							</figure>
+							<br>
+							<div class="class="container" style="margin-bottom: 50px, important!;">
+							<figure class="tg-smallpost">
+						<img src="{{ asset('img/pull_over.jpg')}}" width="700px" height="450px" class="mb-2">
+						 <audio controls>
+							<source src="music/pull_over.mp3" type="audio/mpeg" width="700px"> 
+							
+							<!-- <iframe src="./music/Fireboy DML Nigeria - Eli.mp3" style="width: 500p; height: 500px;"></iframe> -->
+						</audio>
+						
+								<span class="post-batch politics">Pull Over</span>
+							</figure>
+							</div>
+							<br>
+							<br />
+							<hr />
+							
+							<figure class="tg-smallpost">
+						<img src="{{ asset('img/highway.jpeg')}}" width="100px" height="450px" class="mb-2">
+						 <audio controls>
+							<source src="music/presh_music.mp3" type="audio/mpeg" width="700px"> 
+							
+							<!-- <iframe src="./music/Fireboy DML Nigeria - Eli.mp3" style="width: 500p; height: 500px;"></iframe> -->
+						</audio>
+								<span class="post-batch politics">Highway</span>
 							</figure>
 							@foreach ($data['posts'] as $post)
 							<div class="tg-post tg-haslayout">

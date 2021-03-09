@@ -126,13 +126,13 @@
                             <li>
                                 <a href="{{ url(' /')}}">pages</a>
                                 <ul class="tg-dropdown">
-									<li><a href="{{route('fashion')}}">fashion</a></li>
+									<!-- <li><a href="{{route('music')}}">music</a></li> -->
                                     <li><a href="{{route('entertainment')}}">entertainment</a></li>
                                     <li><a href="{{route('technology')}}">technology</a></li>
                                     <li><a href="{{route('food')}}">food</a></li>
                                     <li><a href="{{route('sport')}}">sport</a></li>
                                     <li><a href="{{route('travel')}}">general News</a></li>
-                                    <li><a href="{{route('music')}}">music</a></li>
+                                    <!-- <li><a href="{{route('music')}}">music</a></li> -->
 									<li><a href="{{route('politics')}}">politics</a></li>
 								</ul>
                             </li>
