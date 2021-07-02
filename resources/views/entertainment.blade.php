@@ -85,7 +85,32 @@
 							<div class="tg-sectionheading">
 								<h2>entertainment</h2>
 							</div>
+						<div class="class="container" style="margin-bottom: 30px, important!;">
+							<!-- <figure class="tg-smallpost"> -->
+						<img src="{{ asset('img/shame.jpg')}}" width="1000px" height="450px" class="mb-2">
+						<br>
+						 <audio controls>
+							<source src="music/shame.mp3" type="audio/mpeg" width="700px"> 
+							
+							<!-- <iframe src="./music/Fireboy DML Nigeria - Eli.mp3" style="width: 500p; height: 500px;"></iframe> -->
+						</audio>
 						
+								<h4>Bari No Go Shame Us</h4>
+							<!-- </figure> -->
+							</div>
+							<div class="class="container" style="margin-bottom: 30px, important!;">
+							<!-- <figure class="tg-smallpost"> -->
+						<img src="{{ asset('img/i_know.jpg')}}" width="1000px" height="450px" class="mb-2">
+						<br>
+						 <audio controls>
+							<source src="music/know.mp3" type="audio/mpeg" width="700px"> 
+							
+							<!-- <iframe src="./music/Fireboy DML Nigeria - Eli.mp3" style="width: 500p; height: 500px;"></iframe> -->
+						</audio>
+						
+								<h4>I Know</h4>
+							<!-- </figure> -->
+							</div>
 						<div style="margin-bottom: 30px;">
 							<!-- <figure class="tg-smallpost"> -->
 							<img src="{{ asset('img/Dj grenium.jpeg')}}" width="1000px" height="450px" class="">
