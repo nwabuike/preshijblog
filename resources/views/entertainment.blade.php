@@ -105,7 +105,7 @@
 						 <audio controls>
 							<source src="music/know.mp3" type="audio/mpeg" width="700px"> 
 							
-							<!-- <iframe src="./music/Fireboy DML Nigeria - Eli.mp3" style="width: 500p; height: 500px;"></iframe> -->
+							
 						</audio>
 						
 								<h4>I Know</h4>
