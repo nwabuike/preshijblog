@@ -23,6 +23,7 @@ Route::get('/politics', 'PoliticController@index')->name('politics');
 Route::get('/sport', 'SportController@index')->name('sport');
 Route::get('/technology', 'TechnologyController@index')->name('technology');
 Route::get('/travel', 'TravelController@index')->name('travel');
+Route::get('/fashion', 'FashionController@index')->name('fashion');
 
 // Route::get('contact-us','ContactUsController@index');
 Route::post('contact-us','ContactUsController@handleForm');
